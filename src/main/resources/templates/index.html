@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"></th:block>
+
+<th:block th:include="~{fragments/navigation}"></th:block>
+
+    <body>
+
+      <div class="jumbotron text-center">
+        <h1 class="display-3">Best selections ever</h1>
+        <h1 class="display-3">Be different</h1>
+        
+        <p class="lead" style="margin-top: 35px;">
+          <a class="btn btn-dark btn-lg" th:href="@{/users/login}" role="button">Login</a>
+          <a class="btn btn-dark btn-lg" th:href="@{/users/register}" role="button">Register</a>
+        </p>
+      </div>
+
+
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <div class="p-5">
+                <img class="img-fluid rounded-circle" th:src="@{https://res.cloudinary.com/defiefioi/image/upload/v1615828707/01_bnvd8s.jpg}" alt="Image">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="p-5">
+                <h2 class="display-4">You are in the right place</h2>
+                <p style="font-size: 20px;">Finding a quality face cream or serum is like looking for the love of your life... <i class="far fa-heart"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    </body>
+
+<th:block th:include="~{fragments/footer}"></th:block>
+
+</html>
