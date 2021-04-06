@@ -1,1 +1,1 @@
-web: java -jar build/libs/shop.jar
+web:java -jar build/libs/shop.jar
