@@ -3,7 +3,7 @@ const searchBar = document.getElementById('searchInput')
 
 const allProducts = [];
 
-fetch("http://localhost:8000/products/api").
+fetch("https://kozmetichno.herokuapp.com/products/api").
 then(response => response.json()).
 then(data => {
     for (let album of data) {
